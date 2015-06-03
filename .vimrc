@@ -2,11 +2,19 @@
 
 " For multi-byte character support (CJK support, for example):
 "set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,euc-kr,gb18030,latin1
-
-
-
-
 execute pathogen#infect()
+
+filetype off
+set runtimepath+=/usr/local/share/lilypond/current/vim/
+filetype on
+syntax on
+
+
+
+if has('persistent_undo')      "check if your vim version supports it
+    set undofile                 "turn on the feature
+    set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
+    endif
 
 
 set statusline+=%#warningmsg#
@@ -101,7 +109,8 @@ set list
 set listchars=tab:>-
 
 nnoremap <S-x> :SyntasticReset<CR>
-nnoremap <C-z> :FixWhitespace<CR>
+
+"#nnoremap <C-z> :FixWhitespace<CR>
 
 filetype plugin indent on
 syntax on
