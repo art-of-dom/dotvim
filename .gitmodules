@@ -8,7 +8,7 @@
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/setcolors"]
-	path = bundle/setcolor
+	path = bundle/setcolors
 	url = https://github.com/felixhummel/setcolors.vim.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
