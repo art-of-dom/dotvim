@@ -34,7 +34,8 @@ command Wq wq
 command W w
 command Q q
 
-set t_Co=88
+"set t_Co=88
+set t_Co=256
 
 set tabstop=4       " Number of spaces that a <Tab> in the file counts for.
 
@@ -118,5 +119,8 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_by_filename = 1
 
 let g:ctrlp_cmd = 'CtrlP'
+colorscheme domColor
 
-colorscheme slate
+"colorscheme vibrantink
+
+"
