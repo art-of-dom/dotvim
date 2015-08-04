@@ -1,4 +1,8 @@
 set background=dark
+syn match cLogic "&&\|||\|==\|!="
+syn match cSimpleAssignment " = "
+syn match cAddressOf " &"
+
 if version > 580
     hi clear
     if exists("syntax_on")
@@ -7,6 +11,11 @@ if version > 580
 endif
 let g:colors_name="domColor"
 
+
+hi cAddressOf     ctermfg=47 guifg=#585858
+
+hi cSimpleAssignment ctermfg=51 guifg=#585858
+hi cLogic     ctermfg=3 guifg=#585858
 hi SpecialKey     ctermfg=240 guifg=#585858
 hi NonText        ctermfg=250 guifg=#bcbcbc
 hi Directory      ctermfg=20 gui=bold guifg=#afd75f
