@@ -9,7 +9,11 @@ set runtimepath+=/usr/local/share/lilypond/current/vim/
 filetype on
 syntax on
 
-
+set foldenable
+set foldlevelstart=20
+set foldnestmax=10
+nnoremap <space> za
+set foldmethod=indent
 
 if has('persistent_undo')      "check if your vim version supports it
     set undofile                 "turn on the feature
