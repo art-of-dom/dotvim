@@ -20,7 +20,7 @@ syn match cSep ","
 "Silly over agressive seaches...
 "hi cAddressOf     ctermfg=47 guifg=#585858
 
-hi cSimpleAssignment ctermfg=55 guifg=#585858
+hi cSimpleAssignment  term=standout ctermfg=88  guifg=#585858
 hi cLogic         ctermfg=3 guifg=#585858
 hi cIncrement     ctermfg=118 guifg=#585858
 hi cDecrement     ctermfg=169 guifg=#585858
