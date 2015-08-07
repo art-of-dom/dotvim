@@ -1,8 +1,4 @@
 set background=dark
-syn match cLogic "&&\|||\|==\|!="
-syn match cSimpleAssignment " = "
-syn match cAddressOf " &"
-
 if version > 580
     hi clear
     if exists("syntax_on")
@@ -10,27 +6,41 @@ if version > 580
     endif
 endif
 let g:colors_name="domColor"
+"syn match cAddressOf \" &"
+syn match cLogic "&&\|||\|==\|!=\|>=\|<=\| > \| < "
+syn match cSimpleAssignment " = "
+syn match cIncrement "++"
+syn match cDecrement "--"
+syn match cPoint "->"
+syn match cSep ","
 
 
-hi cAddressOf     ctermfg=47 guifg=#585858
 
-hi cSimpleAssignment ctermfg=51 guifg=#585858
-hi cLogic     ctermfg=3 guifg=#585858
+
+"Silly over agressive seaches...
+"hi cAddressOf     ctermfg=47 guifg=#585858
+
+hi cSimpleAssignment ctermfg=55 guifg=#585858
+hi cLogic         ctermfg=3 guifg=#585858
+hi cIncrement     ctermfg=118 guifg=#585858
+hi cDecrement     ctermfg=169 guifg=#585858
+hi cPoint         ctermfg=198 guifg=#585858
+hi cSep           ctermfg=11 guifg=#585858
 hi SpecialKey     ctermfg=240 guifg=#585858
 hi NonText        ctermfg=250 guifg=#bcbcbc
 hi Directory      ctermfg=20 gui=bold guifg=#afd75f
 hi ErrorMsg       term=standout ctermfg=117 gui=bold guifg=#87d7ff
 hi IncSearch      term=reverse ctermfg=186 ctermbg=0 guifg=#d7d787 guibg=#000000
 hi Search         term=reverse ctermfg=15 ctermbg=66 guifg=#ffffff guibg=#455354
-hi MoreMsg        ctermfg=228 guifg=#ffff87
-hi ModeMsg        ctermfg=228 guifg=#ffff87
+hi MoreMsg        ctermfg=51 guifg=#ffff87
+hi ModeMsg        ctermfg=57 guifg=#ffff87
 hi LineNr         ctermfg=248 ctermbg=233 guifg=#ffffff guibg=#000000
 hi Question       term=standout ctermfg=81 guifg=#5fd7ff
 hi StatusLine     term=reverse ctermfg=66 guifg=#5f8787
 hi StatusLineNC   term=reverse ctermfg=8 ctermbg=232 guifg=#7f7f7f guibg=#080808
 hi VertSplit      term=reverse ctermfg=8 ctermbg=232 gui=bold guifg=#7f7f7f guibg=#080808
 hi Title          ctermfg=209 guifg=#ff875f
-hi Visual         term=reverse ctermfg=255 ctermbg=95 guifg=#eeeeee guibg=#875f5f
+hi Visual         term=reverse ctermfg=0 ctermbg=250 guifg=#eeeeee guibg=#875f5f
 hi VisualNOS      ctermfg=255 ctermbg=95 guifg=#eeeeee guibg=#875f5f
 hi WarningMsg     term=standout ctermfg=15 ctermbg=236 gui=bold guifg=#ffffff guibg=#303030
 hi WildMenu       term=standout ctermfg=81 ctermbg=234 guifg=#5fd7ff guibg=#121212
@@ -46,8 +56,8 @@ hi SpellBad       term=reverse ctermfg=255 ctermbg=9 guifg=#eeeeee guisp=#ff0000
 hi SpellCap       term=reverse ctermfg=255 ctermbg=12 guifg=#eeeeee guisp=#0000ff
 hi SpellRare      term=reverse ctermfg=255 ctermbg=13 guifg=#eeeeee guisp=#ff00ff
 hi SpellLocal     ctermfg=255 ctermbg=14 guifg=#eeeeee guisp=#00ffff
-hi Pmenu          ctermfg=81 ctermbg=0 guifg=#5fd7ff guibg=#000000
-hi PmenuSel       ctermfg=81 ctermbg=8 guifg=#5fd7ff guibg=#7f7f7f
+hi Pmenu          ctermfg=9 ctermbg=0 guifg=#5fd7ff guibg=#000000
+hi PmenuSel       ctermfg=2 ctermbg=8 guifg=#5fd7ff guibg=#7f7f7f
 hi PmenuSbar      ctermfg=81 ctermbg=232 guifg=#5fd7ff guibg=#080808
 hi PmenuThumb     ctermfg=81 guifg=#5fd7ff
 hi TabLine        ctermfg=255 ctermbg=242 guifg=#eeeeee guibg=#080808

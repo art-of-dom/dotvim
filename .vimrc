@@ -116,6 +116,9 @@ set listchars=tab:>-
 nnoremap <S-x> :SyntasticReset<CR>
 
 "#nnoremap <C-z> :FixWhitespace<CR>
+syn match cLogic "&&\|||\|==\|!="
+syn match cSimpleAssignment " = "
+syn match cAddressOf " &"
 
 filetype plugin indent on
 syntax on
