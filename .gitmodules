@@ -46,3 +46,9 @@
 [submodule "bundle/xterm-color-table"]
 	path = bundle/xterm-color-table
 	url = https://github.com/guns/xterm-color-table.vim.git
+[submodule "bundle/TagHighlight"]
+	path = bundle/TagHighlight
+	url = https://github.com/vim-scripts/TagHighlight.git
+[submodule "bundle/EasyColour"]
+	path = bundle/EasyColour
+	url = https://github.com/skroll/vim-easycolour.git

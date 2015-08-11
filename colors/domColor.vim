@@ -67,11 +67,12 @@ hi CursorColumn   cterm=none term=none ctermbg=235 guibg=#262626
 hi CursorLine     cterm=none term=none ctermbg=235 guibg=#262626
 hi clear ColorColumn
 hi link ColorColumn CursorLine
+hi GlobalConstant ctermfg=0 guifg=#5f8787
 hi MatchParen     term=reverse ctermfg=44 ctermbg=208 gui=bold guifg=#000000 guibg=#ff8700
 hi Comment        ctermfg=80 guifg=#5f8787
 hi Constant       ctermfg=200 gui=bold guifg=#8700af
 hi Special        ctermfg=81 guifg=#5fd7ff
-hi Statement      ctermfg=202 ctermbg=0 guifg=#ff5f00 guibg=#121212
+hi Statement      ctermfg=160 ctermbg=0 guifg=#ff5f00 guibg=#121212
 hi PreProc        ctermfg=169 guifg=#afd75f
 hi Type           ctermfg=22 guifg=#5fd7ff
 hi Underlined     ctermfg=8 gui=underline guifg=#7f7f7f
@@ -84,7 +85,7 @@ hi Number         ctermfg=56 guifg=#af00ff
 hi Boolean        ctermfg=93 guifg=#8700af
 hi Float          ctermfg=141 guifg=#af87ff
 hi Function       ctermfg=25 guifg=#005faf
-hi Conditional    ctermfg=160 gui=bold guifg=#af0000
+hi Conditional    ctermfg=202 gui=bold guifg=#af0000
 hi Repeat         ctermfg=124 gui=bold guifg=#af0000
 hi Label          ctermfg=226 guifg=#ffff87
 hi Operator       ctermfg=1 guifg=#ffaf00
