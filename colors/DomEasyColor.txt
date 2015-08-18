@@ -1,65 +1,83 @@
 Basis:default
 Dark:
 	Normal:White,Black
-	Comment:Green
+
+    Comment:#FFFF30
 	DoxygenComment:#008800
 	DoxygenKeyword:#88ffdd
 	DoxygenLink:#8888ff
 	DoxygenTable:#00bb00
 	DoxygenTableLines:#88ffdd
 	LintComment:#00ff88
-	Constant:#ffff66
-	String:LightYellow
-	Character:DarkYellow
-	PreProc:Blue,Style=Bold
-	Include:@PreProc
-	Define,Macro:#5555FF,Style=Bold
+	Todo:Blue,Yellow
+
+	Number:Purple
+	String:#07C307
+	Character:Orange
+    Boolean:#8700AF
+    Float:#af87ff
+	SpecialChar:#7711FF
+    Constant:#ffff66
+
+    PreProc:Blue,Style=Bold
+	Include:#B00000,#000000,Style=Bold
+	Define:#A52A2A,Style=Bold
+    Macro:#5555FF,Style=Bold
 	PreCondit:#8888FF,Style=Bold
 	Statement:@PreProc
 	Conditional:Gold
+
 	Repeat:#8888FF
-	Label:#2222FF
+	Label:#9F02FF,Style=Bold
 	Exception:#5555AA
-	Operator:#CCCCFF
-	Identifier:Cyan
+	Operator:Red
+
+	Identifier:LimeGreen
 	Function:#007777
 	Method:#009966
-	Class:Blue
+	Class:LightBlue
 	DefinedName:Blue
-	EnumerationValue:#C000C0
+
+	EnumerationValue:#F02170
 	EnumerationName:#FF22FF
+
 	Member:DarkGrey
 	Union:Grey
-	GlobalVariable:#888800
+	GlobalVariable:#1FFF4F
 	LocalVariable:#AAA14C
-	GlobalConstant:#BBBB00
-	Type:#FF8000
+	GlobalConstant:#840B11
+	Type:#20F0F0
+
 	StorageClass:Red
 	Structure:#FF8080
 	Special:Red
-	SpecialChar:#7711FF
 	SpecialKey:#777777
 	NonText:#777777
 	MatchParen:Yellow,Style=Underline
 	Error:White,Red
 	NonIndentTabError:SP=#FFAA00,Style=Undercurl
-	Todo:Blue,Yellow
 	FoldColumn:DarkBlue,#2F2F2F
 	Pmenu:#442206,#FFFF77
 	LineNr:#DFDFDF,#0F0F0F
 	StatusLine:Black,LightGrey
 	StatusLineNC:Black,DarkGrey
-	VertSplit:Black,White
-	SpellBad:Style=Undercurl,SP=Red
+	VertSplit:LightYellow,White
 	SignColumn:BG=#222222
 	Title:Blue,Style=Bold
-	htmlH1:Blue
+	Delimiter:Black
+
+	SpellBad:Style=Undercurl,SP=Red
+    SpellCap:Style=Undercurl,SP=Red
+    SpellRare:Style=Undercurl,SP=Red
+    SpellLocal:Style=Undercurl,SP=Red
+
+    htmlH1:Blue
 	htmlH2:#8888FF
 	htmlH3:#9999DD
 	htmlH4:#5555AA
 	htmlH5:#8888AA
 	htmlH6:#888888
-	Delimiter:DarkCyan
+
 	hlLevel0:@Delimiter
 	hlLevel1:#bfbf00
 	hlLevel2:#990033

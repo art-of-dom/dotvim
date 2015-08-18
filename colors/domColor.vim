@@ -94,7 +94,7 @@ hi Exception      ctermfg=106 gui=bold guifg=#87af00
 hi Include        ctermfg=1 guifg=#eeeeee
 hi Define         ctermfg=69 gui=bold guifg=#af0000
 hi Macro          ctermfg=186 guifg=#d7d787
-hi PreCondit      ctermfg=149 gui=bold guifg=#afd75f
+hi PreCondit      ctermfg=1 gui=bold guifg=#afd75f
 hi StorageClass   ctermfg=208 guifg=#ff8700
 hi Structure      ctermfg=12 guifg=#5fd7ff
 hi Typedef        ctermfg=81 guifg=#5fd7ff
