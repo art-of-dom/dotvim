@@ -9,10 +9,10 @@ Dark:
 	DoxygenTable:#00bb00
 	DoxygenTableLines:#88ffdd
 	LintComment:#00ff88
-	Todo:Blue,Yellow
+	Todo:Blue,Yellow,Style=Bold
 
 	Number:Purple
-	String:#07C307
+	String:#07A307
 	Character:Orange
     Boolean:#8700AF
     Float:#af87ff
@@ -33,7 +33,7 @@ Dark:
 	Operator:Red
 
 	Identifier:LimeGreen
-	Function:#007777
+	Function:Pink
 	Method:#009966
 	Class:LightBlue
 	DefinedName:Blue
@@ -48,23 +48,29 @@ Dark:
 	GlobalConstant:#840B11
 	Type:#20F0F0
 
+
+
 	StorageClass:Red
 	Structure:#FF8080
 	Special:Red
 	SpecialKey:#777777
 	NonText:#777777
-	MatchParen:Yellow,Style=Underline
 	Error:White,Red
 	NonIndentTabError:SP=#FFAA00,Style=Undercurl
 	FoldColumn:DarkBlue,#2F2F2F
 	Pmenu:#442206,#FFFF77
 	LineNr:#DFDFDF,#0F0F0F
-	StatusLine:Black,LightGrey
-	StatusLineNC:Black,DarkGrey
+	StatusLine:Blue,LightGrey
+	StatusLineNC:Blue,DarkGrey
 	VertSplit:LightYellow,White
 	SignColumn:BG=#222222
 	Title:Blue,Style=Bold
 	Delimiter:Black
+
+	Search:Black,LightBlue
+	IncSearch:@Search
+	MatchParen:#000000,#FFFFFF, Style=Underline
+
 
 	SpellBad:Style=Undercurl,SP=Red
     SpellCap:Style=Undercurl,SP=Red

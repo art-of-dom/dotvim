@@ -126,7 +126,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_by_filename = 1
 
 let g:ctrlp_cmd = 'CtrlP'
-colorscheme domColor
+colorscheme DomEasyColor
 
 "colorscheme vibrantink
 

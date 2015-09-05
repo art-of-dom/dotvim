@@ -31,7 +31,6 @@ hi NonText        ctermfg=250 guifg=#bcbcbc
 hi Directory      ctermfg=20 gui=bold guifg=#afd75f
 hi ErrorMsg       term=standout ctermfg=117 gui=bold guifg=#87d7ff
 hi IncSearch      term=reverse ctermfg=186 ctermbg=0 guifg=#d7d787 guibg=#000000
-hi Search         term=reverse ctermfg=15 ctermbg=66 guifg=#ffffff guibg=#455354
 hi MoreMsg        ctermfg=51 guifg=#ffff87
 hi ModeMsg        ctermfg=57 guifg=#ffff87
 hi LineNr         ctermfg=248 ctermbg=233 guifg=#ffffff guibg=#000000

@@ -52,3 +52,6 @@
 [submodule "bundle/EasyColour"]
 	path = bundle/EasyColour
 	url = https://github.com/skroll/vim-easycolour.git
+[submodule "bundle/VimMultipleCursors"]
+	path = bundle/VimMultipleCursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
