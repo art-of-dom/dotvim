@@ -9,6 +9,8 @@ set runtimepath+=/usr/local/share/lilypond/current/vim/
 filetype on
 syntax on
 
+let g:gitgutter_sign_column_always = 1
+
 set foldenable
 set foldlevelstart=20
 set foldnestmax=10
@@ -21,9 +23,11 @@ if has('persistent_undo')      "check if your vim version supports it
     endif
 
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"set statusline+=%F
+set laststatus=2
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -74,6 +78,8 @@ set ignorecase      " Ignore case in search patterns.
 
 set smartcase       " Override the 'ignorecase' option if the search pattern
                     " contains upper case characters.
+
+
 
 set backspace=2     " Influences the working of <BS>, <Del>, CTRL-W
                     " and CTRL-U in Insert mode. This is a list of items,
@@ -127,6 +133,9 @@ let g:ctrlp_by_filename = 1
 
 let g:ctrlp_cmd = 'CtrlP'
 colorscheme DomEasyColor
+
+
+set clipboard=unnamed
 
 "colorscheme vibrantink
 
