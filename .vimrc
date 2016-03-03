@@ -11,6 +11,9 @@ syntax on
 
 let g:gitgutter_sign_column_always = 1
 
+let g:indentLine_color_term = 239
+
+
 set foldenable
 set foldlevelstart=20
 set foldnestmax=10

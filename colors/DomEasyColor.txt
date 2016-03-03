@@ -65,7 +65,7 @@ Dark:
 	VertSplit:LightYellow,White
 	SignColumn:BG=#222222
 	Title:Blue,Style=Bold
-	Delimiter:Black
+	Delimiter:Green
 
 	Search:Black,LightBlue
 	IncSearch:@Search

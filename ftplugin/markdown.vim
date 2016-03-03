@@ -1,0 +1,2 @@
+setlocal spell
+colorscheme skittles_berry
