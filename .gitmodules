@@ -73,3 +73,21 @@
 [submodule "bundle/vim-smple-todo"]
 	path = bundle/vim-smple-todo
 	url = https://github.com/vitalk/vim-simple-todo
+[submodule "bundle/vim-indent-guides"]
+	path = bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides
+[submodule "bundle/vim-dispatch"]
+	path = bundle/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch
+[submodule "bundle/vim-tmux-navigator"]
+	path = bundle/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule "bundle/yankRing"]
+	path = bundle/yankRing
+	url = https://github.com/vim-scripts/YankRing.vim
+[submodule "bundle/vim-tut"]
+	path = bundle/vim-tut
+	url = https://github.com/johnsyweb/vim-tut
+[submodule "bundle/golden-ratio"]
+	path = bundle/golden-ratio
+	url = https://github.com/roman/golden-ratio

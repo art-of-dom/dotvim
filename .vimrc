@@ -1,4 +1,4 @@
-"ee: http://vimdoc.sourceforge.net/htmldoc/options.html for details
+"see: http://vimdoc.sourceforge.net/htmldoc/options.html for details
 
 " For multi-byte character support (CJK support, for example):
 "set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,euc-kr,gb18030,latin1
@@ -13,6 +13,7 @@ let g:gitgutter_sign_column_always = 1
 
 let g:indentLine_color_term = 239
 
+let mapleader = ","
 
 set foldenable
 set foldlevelstart=20
@@ -31,6 +32,7 @@ if has('persistent_undo')      "check if your vim version supports it
 "set statusline+=%*
 "set statusline+=%F
 set laststatus=2
+let g:unit_test_prefix='test_'
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -45,8 +47,10 @@ command Wq wq
 command W w
 command Q q
 
-"set t_Co=88
+"set t_Co=88 "I like my colors
 set t_Co=256
+
+"let g:indent_guides_enable_on_vim_startup = 1
 
 set tabstop=4       " Number of spaces that a <Tab> in the file counts for.
 
@@ -122,7 +126,8 @@ set mouse=a         " Enable the use of the mouse.
 set list
 set listchars=tab:>-
 
-nnoremap <S-x> :SyntasticReset<CR>
+nnoremap <S-z> :SyntasticReset<CR>
+nnoremap <F3> :<C-U>TUT<CR>
 
 "#nnoremap <C-z> :FixWhitespace<CR>
 syn match cLogic "&&\|||\|==\|!="
@@ -139,7 +144,7 @@ colorscheme DomEasyColor
 
 
 set clipboard=unnamed
-
+filetype plugin on
 "colorscheme vibrantink
 
 "
