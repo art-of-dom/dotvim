@@ -55,8 +55,8 @@
 [submodule "bundle/VimMultipleCursors"]
 	path = bundle/VimMultipleCursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
-[submodule "/home/osboxes/.vim/bundle/vim-airline"]
-	path = /home/osboxes/.vim/bundle/vim-airline
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
