@@ -21,32 +21,58 @@ set foldnestmax=10
 nnoremap <space> za
 set foldmethod=indent
 
+" persistent_undo settings
+
 if has('persistent_undo')      "check if your vim version supports it
     set undofile                 "turn on the feature
     set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
     endif
 
 
+set wildmenu
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
 "set statusline+=%F
+
 set laststatus=2
 let g:unit_test_prefix='test_'
 
+
+" Syntastic Plugin Config
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_check_on_w =  1
-let g:syntastic_c_config_file = ".syntastic_c_config"
+let g:syntastic_check_on_w =  1 " check on save
+let g:syntastic_c_config_file = ".syntastic_c_config" " use this file to confiure check
+nnoremap <S-z> :SyntasticReset<CR>
 "let g:syntastic_c_config
 
+" Ctrl-P Plugin Config
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_by_filename = 1
+let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_open_new_file = 'h'
+
+let g:yankring_replace_n_pkey = '<m-p>'
+let g:yankring_replace_n_nkey = '<m-n>'
+
+
+" command alises
 command WQ wq
 command Wq wq
 command W w
 command Q q
 
+
+nnoremap <leader>v :<C-U>bnext<bar>vspl<bar>bprevious<CR>
+nnoremap <leader>h :<C-U>bnext<bar>sp<bar>bprevious<CR>
+nnoremap <F3> :<C-U>TUT<CR>
 "set t_Co=88 "I like my colors
 set t_Co=256
 
@@ -126,7 +152,6 @@ set mouse=a         " Enable the use of the mouse.
 set list
 set listchars=tab:>-
 
-nnoremap <S-z> :SyntasticReset<CR>
 nnoremap <F3> :<C-U>TUT<CR>
 
 "#nnoremap <C-z> :FixWhitespace<CR>
@@ -136,10 +161,7 @@ syn match cAddressOf " &"
 
 filetype plugin indent on
 syntax on
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_by_filename = 1
 
-let g:ctrlp_cmd = 'CtrlP'
 colorscheme DomEasyColor
 
 
