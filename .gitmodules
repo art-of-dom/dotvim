@@ -94,3 +94,6 @@
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby
+[submodule "bundle/codi"]
+	path = bundle/codi
+	url = https://github.com/metakirby5/codi.vim.git
