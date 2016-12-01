@@ -97,3 +97,6 @@
 [submodule "bundle/codi"]
 	path = bundle/codi
 	url = https://github.com/metakirby5/codi.vim.git
+[submodule "bundle/DoxygenToolkit"]
+	path = bundle/DoxygenToolkit
+	url = https://github.com/vim-scripts/DoxygenToolkit.vim.git
