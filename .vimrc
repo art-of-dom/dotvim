@@ -40,7 +40,7 @@ let g:unit_test_prefix='test_'
 
 
 " Syntastic Plugin Config
-let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
@@ -68,11 +68,13 @@ command WQ wq
 command Wq wq
 command W w
 command Q q
-
+command Test 'Dispatch rake test:all'
 
 nnoremap <leader>v :<C-U>bnext<bar>vspl<bar>bprevious<CR>
 nnoremap <leader>h :<C-U>bnext<bar>sp<bar>bprevious<CR>
 nnoremap <F3> :<C-U>TUT<CR>
+nnoremap 00 :<C-U>Dispatch<space>ctags<space>-R<CR>:<C-U>UpdateTypesFile<CR>
+nnoremap -1 :<C-U>Dispatch<space>rake<space>test:all<CR>
 "set t_Co=88 "I like my colors
 set t_Co=256
 
