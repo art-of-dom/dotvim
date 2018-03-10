@@ -17,7 +17,7 @@ Dark:
     Boolean:#8700AF
     Float:#af87ff
 	SpecialChar:#7711FF
-    Constant:#ffff66
+    Constant:#ffff66,Style=Bold
 
     PreProc:Blue,Style=Bold
 	Include:#B00000,#000000,Style=Bold
@@ -33,12 +33,12 @@ Dark:
 	Operator:Red
 
 	Identifier:LimeGreen
-	Function:Pink
-	Method:#009966
+	Function:Pink,Style=Bold
+	Method:#009966,Style=Bold
 	Class:LightBlue
-	DefinedName:#2222F0, Style=Bold
+	DefinedName:#2222F0,Style=Bold
 
-	EnumerationValue:#F02170
+	EnumerationValue:#F02170,Style=Bold
 	EnumerationName:#FF22FF
 
 	Member:DarkGrey

@@ -167,6 +167,11 @@ syntax on
 colorscheme DomEasyColor
 
 
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
 set clipboard=unnamed
 filetype plugin on
 "colorscheme vibrantink
