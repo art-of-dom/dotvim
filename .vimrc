@@ -9,7 +9,7 @@ set runtimepath+=/usr/local/share/lilypond/current/vim/
 filetype on
 syntax on
 
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
 
 let g:indentLine_color_term = 239
 
@@ -46,6 +46,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_check_on_w =  1 " check on save
 let g:syntastic_c_config_file = ".syntastic_c_config" " use this file to confiure check
+let g:syntastic_java_javac_config_file_enabled = 1
+let g:syntastic_python_checkers = ['pylint']
 nnoremap <S-z> :SyntasticReset<CR>
 "let g:syntastic_c_config
 

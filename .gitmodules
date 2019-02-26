@@ -112,3 +112,6 @@
 [submodule "bundle/rust.vim"]
 	path = bundle/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule "bundle/vim-crystal"]
+	path = bundle/vim-crystal
+	url = git@github.com:rhysd/vim-crystal.git
